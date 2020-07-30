@@ -1,0 +1,60 @@
+CREATE TABLE Lab(
+Lab_NO VARCHAR2(5) PRIMARY KEY,
+Patient_Id NUMBER(8) NOT NULL,
+Doctor_Id NUMBER(8) NOT NULL,
+Patient_type VARCHAR2(25) NOT NULL,
+Amount NUMBER(20) NOT NULL);
+
+INSERT INTO Lab (`patientid`, `patient_name`, `doctorid`, `patient_type`) VALUES (NULL, 'Habib', ' NULL', 'Emergency');
+INSERT INTO Lab (`patientid`, `patient_name`, `doctorid`, `patient_type`) VALUES (NULL, 'John', ' NULL', 'Emergency');
+INSERT INTO Lab (`patientid`, `patient_name`, `doctorid`, `patient_type`) VALUES (NULL, 'Tonny', ' NULL', 'Emergency');
+INSERT INTO Lab (`patientid`, `patient_name`, `doctorid`, `patient_type`) VALUES (NULL, 'Jerin', ' NULL', 'Regular');
+INSERT INTO Lab (`patientid`, `patient_name`, `doctorid`, `patient_type`) VALUES (NULL, 'Kelly', ' NULL', 'Regular');
+INSERT INTO Lab (`patientid`, `patient_name`, `doctorid`, `patient_type`) VALUES (NULL, 'Abel', 'NULL', 'Regular');
+
+ 
+CREATE TABLE Doctors_Room(
+Room_No VARCHAR2(25) NOT NULL,
+Room_Type VARCHAR2(25) NOT NULL,
+Status VARCHAR2(25) NOT NULL);
+
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '101', 'Single', 'Available');
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '102', 'Single', 'Available');
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '103', 'Single', 'Available');
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '104', 'Single', 'Available');
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '105', 'Single', 'Available');
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '106', 'Single', 'Available');
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '107', 'Single', 'Available');
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '108', 'Single', 'Available');
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '109', 'Single', 'Available');
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '110', 'Single', 'Available');
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '111', 'Single', 'Available');
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '112', 'Single', 'Available');
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '113', 'Single', 'Available');
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '114', 'Single', 'Available');
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '115', 'Single', 'Available');
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '116', 'Single', 'Available');
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '117', 'Single', 'Available');
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '118', 'Single', 'Available');
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '119', 'Single', 'Available');
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '120', 'Single', 'Available');
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '121', 'Single', 'Available');
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '122', 'Single', 'Available');
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '123', 'Single', 'Available');
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '124', 'Single', 'Available');
+INSERT INTO Doctors_Room (`room_No`, `room_type`, `status`) VALUES ( '125', 'Single', 'Available');
+
+CREATE TABLE Staff(
+Staff_Id NUMBER(8) PRIMARY KEY,
+First_Name VARCHAR2(20),
+Last_Name VARCHAR2(25) NOT NULL,
+staff_Age NUMBER(4) NOT NULL,
+Staff_qualification VARCHAR2(10) NOT NULL,
+Phone_Number VARCHAR2(15) NOT NULL) ;
+
+INSERT INTO Staff (`staffid`, `first_name`, `last_name`,`staff_age`, `staff_qualification`, `phone_number`) VALUES ( 'NULL', 'Youshuf', 'Khan','35', 'Cashier', '123456');
+INSERT INTO Staff (`staffid`, `first_name`, `last_name`,`staff_age`, `staff_qualification`, `phone_number`) VALUES ( 'NULL', 'Halima', 'Akter','33', 'Cleaner', '987654');
+INSERT INTO Staff (`staffid`, `first_name`, `last_name`,`staff_age`, `staff_qualification`, `phone_number`) VALUES ( 'NULL', 'Jamal', 'Hossen','23', 'Cleaner', '923456');
+INSERT INTO Staff (`staffid`, `first_name`, `last_name`,`staff_age`, `staff_qualification`, `phone_number`) VALUES ( 'NULL', 'Karim', 'Abdulla','36', 'Helper', '823456');
+INSERT INTO Staff (`staffid`, `first_name`, `last_name`,`staff_age`, `staff_qualification`, `phone_number`) VALUES ( 'NULL', 'Jashim', 'Khan','45', 'Medicine_checker', '093456');
+INSERT INTO Staff (`staffid`, `first_name`, `last_name`,`staff_age`, `staff_qualification`, `phone_number`) VALUES ( 'NULL', 'Jobaida', 'Khanom','43', 'Cleaner', '673456');

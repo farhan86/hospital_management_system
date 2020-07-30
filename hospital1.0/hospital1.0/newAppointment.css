@@ -1,0 +1,38 @@
+#middle{
+    padding: 1%;
+}
+
+input[type="text"], input[type="password"], input[type="number"]{
+    width: 300px;
+    border-radius: 8px;
+    padding: 5px;
+    border: 1px solid #0173B0;
+}
+
+select{
+    height: 25px;
+    width: 313px;
+    border-radius: 8px;
+}
+
+textarea{
+    width: 305px;
+}
+
+input[type="submit"]{
+    width: 100px;
+    background-color: #0173B0;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border: none;
+    font-size: 1.2em;
+}
+
+input[type="submit"]:hover{
+    transition-delay: 0.5s;
+    background-color: steelblue;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
